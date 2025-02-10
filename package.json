@@ -2,7 +2,7 @@
   "name": "graei-labs",
   "version": "1.0.0",
   "private": "true",
-  ""scripts": {
+  "scripts": {
   "start": "npx expo start",
   "android": "npx expo run:android",
   "ios": "npx expo run:ios",
