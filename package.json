@@ -1,42 +1,13 @@
-
+{
   "name": "graei-labs",
   "version": "1.0.0",
-  "private": "true",
+  "private": true,
   "scripts": {
-  "start": "npx expo start",
-  "android": "npx expo run:android",
-  "ios": "npx expo run:ios",
-  "web": "npx expo start --web"
-
-  "name": "graei-labs",
-  "version": "1.0.0",
-  "private": "true",
-  "scripts": {
-    "start": "expo start",
-    "android": "expo run:android",
-    "ios": "expo run:ios",
-    "web": "expo start --web"
-  }
-  "dependencies": {
-    "expo": "~44.0.0",
-    "react": "17.0.1",
-    "react-dom": "17.0.1",
-    "react-native": "0.64.3",
-    "react-native-web": "0.17.1",
-    "@react-navigation/native": "^6.0.10",
-    "@react-navigation/stack": "^6.2.1",
-    "react-native-paper": "^4.9.2",
-    "axios": "^0.24.0",
-    "core-js": "^3.23.3" // Updated to the latest version
-  
-  "devDependencies": {
-    "@babel/core": "^7.12.9",
-    "jest": "^27.4.5",
-    "@testing-library/react-native": "^12.4.0", // Updated to the latest version
-    "uglify-js": "^3.13.0", // Updated to the latest version
-    "rimraf": "^4.0.0" // Updated to the latest version
-  
-  
+    "start": "npx expo start",
+    "android": "npx expo run:android",
+    "ios": "npx expo run:ios",
+    "web": "npx expo start --web"
+  },
   "dependencies": {
     "expo": "~44.0.0",
     "react": "17.0.1",
@@ -47,10 +18,12 @@
     "@react-navigation/stack": "^6.2.1",
     "react-native-paper": "^4.9.2",
     "axios": "^0.24.0"
-  
+  },
   "devDependencies": {
     "@babel/core": "^7.12.9",
     "jest": "^27.4.5",
-    "@testing-library/react-native": "^7.2.0"
-  
-
+    "@testing-library/react-native": "^12.4.0",
+    "uglify-js": "^3.13.0",
+    "rimraf": "^4.0.0"
+  }
+}
