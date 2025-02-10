@@ -22,6 +22,6 @@
   "devDependencies": {
     "@babel/core": "^7.12.9",
     "jest": "^27.4.5",
-    "@testing-library/react-native": "^8.0.1"
+    "@testing-library/react-native": "^7.2.0" // Updated to a valid version
   }
 }
