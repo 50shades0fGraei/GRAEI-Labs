@@ -1,30 +1,35 @@
 import React from 'react';
-import { View, StyleSheet } from 'react-native';
+import { View, StyleSheet, KeyboardAvoidingView, Platform } from 'react-native';
 import ChatBot from '../components/ChatBot';
 import Terminal from '../components/Terminal';
 
 const SplitScreen = () => {
   return (
-    <View style={styles.container}>
-      <View style={styles.column}>
+    <KeyboardAvoidingView
+      style={styles.container}
+      behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
+      keyboardVerticalOffset={Platform.OS === 'ios' ? 0 : 20}
+    >
+      <View style={styles.row}>
         <ChatBot />
       </View>
-      <View style={styles.column}>
+      <View style={styles.row}>
         <Terminal />
       </View>
-    </View>
+    </KeyboardAvoidingView>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    flexDirection: 'row',
+    flexDirection: 'column',
   },
-  column: {
+  row: {
     flex: 1,
     borderWidth: 1,
-    borderColor padding: 10,
+    borderColor: '#cccccc',
+    padding: 10,
   },
 });
 
